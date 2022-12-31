@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JavaScript Lab</title>
+  <title>Time-Card and Payroll Application</title>
 </head>
 <body>
-  hello
-  <script type="text/javascript" src="index.js"></script>
+  <!-- HTML elements for user input and display of results -->
+  <form id="employee-form">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name"><br>
+    <label for="family-name">Family Name:</label>
+    <input type="text" id="family-name" name="family-name"><br>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title"><br>
+    <label for="pay-rate">Pay Rate:</label>
+    <input type="number" id="pay-rate" name="pay-rate"><br>
+    <button type="submit">Create Employee Record</button>
+  </form>
+  <div id="employee-records"></div>
+  <form id="time-in-form">
+    <label for="time-in-stamp">Time In:</label>
+    <input type="text" id="time-in-stamp" name="time-in-stamp"><br>
+    <button type="submit">Record Time In</button>
+  </form>
+  <form id="time-out-form">
+    <label for="time-out-stamp">Time Out:</label>
+    <input type="text" id="time-out-stamp" name="time-out-stamp"><br>
+    <button type="submit">Record Time Out</button>
+  </form>
+  <form id="hours-form">
+    <label for="hours-date">Date:</label>
+    <input type="text" id="hours-date" name="hours-date"><br>
+    <button type="submit">Calculate Hours Worked</button>
+  </form>
+  <div id="hours-result"></div>
+  <form id="wages-form">
+    <label for="wages-date">Date:</label>
+    <input type="text" id="wages-date" name="wages-date"><br>
+    <button type="submit">Calculate Wages Earned</button>
+  </form>
+  <div id="wages-result"></div>
+  <form id="all-wages-form">
+    <button type="submit">Calculate Total Wages Earned</button>
+  </form>
+  <div id="all-wages-result"></div>
+  <form id="search-form">
+    <label for="search-name">Name:</label>
+    <input type="text" id="search-name" name="search-name"><br>
+    <button type="submit">Search for Employee</button>
+  </form>
+  <div id="search-result"></div>
+  <script src="index.js"></script>
 </body>
 </html>
